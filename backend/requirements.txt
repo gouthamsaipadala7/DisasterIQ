@@ -7,3 +7,4 @@ Pillow
 ultralytics
 geopy
 reportlab
+streamlit
