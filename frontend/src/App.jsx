@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 // ─── API base URL ──────────────────────────────────────────────
 // In production (HF Spaces), the backend serves both API and static files.
 // In dev mode (Vite), we proxy or use a separate port.
-const API_BASE = import.meta.env.VITE_API_URL || '';
+const API_BASE = 'https://disasteriq-1-9khx.onrender.com';
 
 const STEP_DELAYS = [400, 800, 600, 500, 700, 400]; // ms durations per progress step
 
