@@ -24,6 +24,12 @@ from config import CORS_ORIGINS
 from mapper import geocode_location, generate_zone_markers
 from reporter import generate_pdf
 
+from flask import Flask
+from flask_cors import CORS
+
+app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins": "https://disaster-iq-six.vercel.app"}})
+
 # ─── App Initialization ─────────────────────────────────────────
 
 app = FastAPI(
@@ -253,3 +259,19 @@ if __name__ == "__main__":
 
     port = int(os.environ.get("PORT", 7860))
     uvicorn.run(app, host="0.0.0.0", port=port)
+
+from flask_cors import CORS
+
+CORS(app, origins=["https://disaster-iq-six.vercel.app"])
+
+@app.route("/api/analyze", methods=["POST"])
+def analyze():
+    data = request.json
+
+    result = {
+        "success": True,
+        "message": "Analysis working",
+        "input": data
+    }
+
+    return jsonify(result)
