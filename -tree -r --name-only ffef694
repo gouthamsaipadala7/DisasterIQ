@@ -1,0 +1,38 @@
+[33mcommit ffef6947edaff5deaee69cc2e8c4262708681fc8[m[33m ([m[1;36mHEAD[m[33m)[m
+Author: gouthamsaipadala7 <gouthamsai.padala.7@gmail.com>
+Date:   Wed May 20 11:31:09 2026 +0530
+
+    Initial commit: add DisasterIQ project files
+
+ .gitignore                                   |  41 [32m++++[m
+ Dockerfile                                   |  25 [32m++[m
+ README.md                                    | 192 [32m++++++++++++++++[m
+ app.py                                       |  21 [32m++[m
+ backend/allocator.py                         |  74 [32m++++++[m
+ backend/analyzer.py                          | 269 [32m++++++++++++++++++++++[m
+ backend/config.py                            | 106 [32m+++++++++[m
+ backend/main.py                              | 248 [32m++++++++++++++++++++[m
+ backend/mapper.py                            | 100 [32m++++++++[m
+ backend/reporter.py                          | 256 [32m+++++++++++++++++++++[m
+ backend/requirements.txt                     |   9 [32m+[m
+ backend/yolov8n.pt                           | Bin [31m0[m -> [32m6549796[m bytes
+ frontend/index.html                          |  18 [32m++[m
+ frontend/package.json                        |  23 [32m++[m
+ frontend/postcss.config.js                   |   6 [32m+[m
+ frontend/src/App.jsx                         | 184 [32m+++++++++++++++[m
+ frontend/src/components/DisasterMap.jsx      | 173 [32m++++++++++++++[m
+ frontend/src/components/Footer.jsx           |  48 [32m++++[m
+ frontend/src/components/Hero.jsx             | 111 [32m+++++++++[m
+ frontend/src/components/HowItWorks.jsx       | 115 [32m++++++++++[m
+ frontend/src/components/Navbar.jsx           | 103 [32m+++++++++[m
+ frontend/src/components/ProgressBar.jsx      |  94 [32m++++++++[m
+ frontend/src/components/ReportSection.jsx    | 178 [32m++++++++++++++[m
+ frontend/src/components/ResourceTable.jsx    |  76 [32m++++++[m
+ frontend/src/components/ResultsDashboard.jsx | 200 [32m++++++++++++++++[m
+ frontend/src/components/UploadPanel.jsx      | 245 [32m++++++++++++++++++++[m
+ frontend/src/components/ZoneCards.jsx        | 107 [32m+++++++++[m
+ frontend/src/main.jsx                        |  10 [32m+[m
+ frontend/src/styles/globals.css              | 332 [32m+++++++++++++++++++++++++++[m
+ frontend/tailwind.config.js                  |  52 [32m+++++[m
+ frontend/vite.config.js                      |  19 [32m++[m
+ 31 files changed, 3435 insertions(+)
